@@ -33,13 +33,75 @@ nav {
     margin: 10px;
 }
 
+.fein{
+    width: 200px;
+    border-radius: 20px;
+}
+
 .Form{
     margin-top: 100px;
 }
 
-.FormInside{
+.formside{
+    margin-bottom: 10px;
+}
+
+.FormInside2{
+    display: grid;
+    grid-template-columns: 5fr 1fr 6fr;
     background-color: white;
     padding: 10%;
     margin: 10%;
     border-radius: 20px;
 }
+
+.FormInsideAndIside{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    background-color: white;
+    text-align: center;
+}
+
+.formside{
+    font-size: 17px;
+}
+
+.vl {
+    border-left: 6px solid black;
+    height: 500px;
+    width: 2px;
+    text-align: center;
+  }
+
+
+.submitbutton{
+    text-align: center;
+    margin-top: 10px;
+}
+.headtext{
+    padding: 5%;
+}
+
+  /* condition */
+
+
+  @media only screen and (max-width: 1200px)  {
+    .FormInside2{
+        display:block;
+        grid-template-columns: 5fr 1fr 6fr;
+        background-color: white;
+        padding: 10%;
+        margin: 10%;
+        border-radius: 20px;
+    }
+
+    .vl {
+        height: 0px;
+        width: 0px;
+        margin-bottom: 50px;
+      }
+
+    .headtext{
+        text-align: center;
+    }
+  }

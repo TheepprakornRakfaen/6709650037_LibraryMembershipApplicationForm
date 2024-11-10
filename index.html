@@ -22,9 +22,61 @@
     </div>
     
     <div class="Form">
-        <div class="FormInside">
+        <div class="FormInside2">
+            <div class="headtext">
+                <h1> ยินดีต้อนรับเข้าสู่ระบบสมัครสมาชิก</h1>
+            </div>
+
+            <div class="vl"></div>
+
             <form>
-                <input type="text">
+                <div class="FormInsideAndIside">
+                    <div class="formside">
+                        <label for="firstname">ชื่อ : </label><br><br>
+                        <label for="surname">นามสกุล : </label><br><br>
+                        <label for="firstnameenglish">ชื่อ (ภาษาอังกฤษ) : </label><br><br>
+                        <label for="surnameenglish" >นามสกุล (ภาษาอังกฤษ) : </label><br><br>
+                        <label for="phonenumber">หมายเลขโทรศัพท์ :</label><br><br>
+                        <label for="email">อีเมล :</label><br><br>
+                        <label for="userdate">วัน/เดือน/ปี เกิด :</label><br><br>
+                        <label for="checkforupdate">อัพเดตข้อมูลข้าวสาร :</label><br><br>
+
+                        <p>ระบุเพศ</p><br>
+                        <div>
+                            <input type="radio" id="male" name="sex">
+                            <label for="male">ชาย</label>
+                            <input type="radio" id="female" name="sex">
+                            <label for="female">หญิง</label>
+                            <input type="radio" id="unknown" name="sex">
+                            <label for="unknown">ไม่ระบุ...</label>
+                        </div><br><br>
+
+                        <p>แนวหนังสือที่ชอบ</p><br>
+                        <select  name="fav_book" id="fav_book" >
+                            <option value="documentary">สารคดี</option>
+                            <option value="manga">มังงะ</option>
+                            <option value="novel/lightnovel">นิยาย</option>
+                            <option value="bussiness">ธุรกิจ</option>
+                            <option value="selfimprovement">พัฒนาตัวเอง</option>
+                            <option value="learning">หนังสือเรียนทั่วไป</option>
+                        </select>
+                    </div>
+    
+                    <div class="formside">
+                        <input type="text" id="firstname" name="firstname" placeholder="ทีปรกร" required><br><br>
+                        <input type="text" id="surname" name="surname" placeholder="รักแฟ้น" required><br><br>
+                        <input type="text" id="firstnameenglish" name="firstnameenglish" placeholder="Theepparkorn" required><br><br>
+                        <input type="text" id="surnameenglish" name="surnameenglish" placeholder="Rakfaen" required><br><br>
+                        <input type="number" id="phonenumber" name="phonenumber" placeholder="09X-XXX-XXXX" required><br><br>
+                        <input type="email" name="email" id="email" placeholder="Sumemeleader@gmail.com" required><br><br>
+                        <input type="date" name="userdate" id="userdate" required><br><br>
+                        <input type="checkbox" name="checkforupdate" id="checkforupdate" required><br><br>
+                    </div>
+                </div>
+
+                <div class="submitbutton">
+                    <input type="submit" name="submit" id="submit">
+                </div>
             </form>
         </div>
     </div>
